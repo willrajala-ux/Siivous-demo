@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="fi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Raikas — siivousyrityksen sivumalli</title>
+<meta name="description" content="Fiktiivinen siivousyrityksen verkkosivumalli. Tutustu palveluihin ja kokeile tarjouspyyntöä.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="demo">ESITTELYMALLI · Raikas on fiktiivinen yritys. Sivulta ei voi tilata palveluja.</div>
+<header>
+<a class="brand" href="#">raikas<span>✳</span>
+</a>
+<nav aria-label="Päänavigaatio">
+<a href="#palvelut">Palvelut</a>
+<a href="#nain">Näin se toimii</a>
+<a class="button small" href="#yhteys">Pyydä tarjous</a>
+</nav>
+</header>
+<main>
+<section class="hero">
+<div>
+<p class="eyebrow">KOTISIIVOUS · MUUTTOSIIVOUS · TOIMITILAT</p>
+<h1>Vähemmän siivousta.<br>
+<em>Enemmän elämää.</em>
+</h1>
+<p class="intro">Anna arjen hengittää. Valitse kotiisi sopiva siivous ja käytä aikasi siihen, mistä pidät.</p>
+<a class="button" href="#yhteys">Kerro siivoustarpeestasi <span aria-hidden="true">↗</span>
+</a>
+<p class="sub">Kertasiivous tai säännöllinen käynti — sinun arkeesi.</p>
+</div>
+<figure>
+<img src="home.jpg" alt="Valoisa ja siisti kodin oleskelutila" width="1000" height="1100">
+<figcaption>Tilaa rauhallisemmalle arjelle.</figcaption>
+</figure>
+</section>
+<section id="palvelut">
+<p class="eyebrow">PALVELUT</p>
+<h2>Puhdas koti.<br>Yksi asia vähemmän mielessä.</h2>
+<div class="cards">
+<article>
+<span class="num">01</span>
+<h3>Kotisiivous</h3>
+<p>Keittiö, kylpyhuone ja kodin pinnat kuntoon. Sovitaan yhdessä siivouksen sisältö ja sinulle sopiva rytmi.</p>
+</article>
+<article>
+<span class="num">02</span>
+<h3>Muuttosiivous</h3>
+<p>Uusi alku puhtaasta kodista. Käydään läpi asunnon koko, kunto ja tarvittavat lisätyöt ennen tarjousta.</p>
+</article>
+<article>
+<span class="num">03</span>
+<h3>Toimitilasiivous</h3>
+<p>Siisti työtila tekee arjesta mukavamman. Siivouksen laajuus ja käyntiajat sovitaan yrityksesi tarpeisiin.</p>
+</article>
+</div>
+</section>
+<section id="nain" class="steps">
+<div>
+<p class="eyebrow">HELPPO ALOITTAA</p>
+<h2>Sinä kerrot.<br>Me suunnittelemme.</h2>
+</div>
+<ol>
+<li>
+<h3>Kerro tilasta</h3>
+<p>Millainen tila, missä ja kuinka usein?</p>
+</li>
+<li>
+<h3>Sovi sisällöstä</h3>
+<p>Saat ehdotuksen työn laajuudesta ja hinnasta ennen päätöstä.</p>
+</li>
+<li>
+<h3>Valitse ajankohta</h3>
+<p>Siivous sovitetaan yhdessä arkeesi.</p>
+</li>
+</ol>
+</section>
+<section id="yhteys" class="contact">
+<div>
+<p class="eyebrow">OTA ENSIMMÄINEN ASKEL</p>
+<h2>Millainen tila<br>sinulla on mielessä?</h2>
+<p>Tässä esittelyssä voit kokeilla tarjouspyynnön täyttämistä. Tietoja ei lähetetä eikä tallenneta.</p>
+</div>
+<form id="quote">
+<label>Palvelu<select name="service">
+<option>Kotisiivous</option>
+<option>Muuttosiivous</option>
+<option>Toimitilasiivous</option>
+</select>
+</label>
+<div class="fields">
+<label>Tilan koko (m²)<input name="size" type="number" min="1" max="10000" required placeholder="80">
+</label>
+<label>Siivousväli<select name="frequency">
+<option>Kertasiivous</option>
+<option>Joka viikko</option>
+<option>Joka toinen viikko</option>
+<option>Kerran kuukaudessa</option>
+</select>
+</label>
+</div>
+<button class="button" type="submit">Kokeile tarjouspyyntöä</button>
+<p id="result" role="status" aria-live="polite">
+</p>
+</form>
+</section>
+</main>
+<footer>
+<a class="brand" href="#">raikas<span>✳</span>
+</a>
+<p>Fiktiivinen sivumalli · Ei ajanvarauksia tai tiedonkeruuta</p>
+<p>Sivumalli: Ville Rajala</p>
+</footer>
+<script src="app.js">
+</script>
+</body>
+</html>
